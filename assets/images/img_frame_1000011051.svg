@@ -1,0 +1,41 @@
+<svg width="305" height="12" viewBox="0 0 305 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_0_7720)">
+<circle cx="6" cy="6" r="6" fill="#2490A9"/>
+<path d="M5.32626 7.09657L8.51017 3.91266L9 4.40249L5.32626 8.07622L3.12201 5.872L3.61184 5.38217L5.32626 7.09657Z" fill="white" stroke="white" stroke-width="0.5"/>
+</g>
+<line x1="12" y1="5.5" x2="72" y2="5.5" stroke="#2490A9"/>
+<g clip-path="url(#clip1_0_7720)">
+<circle cx="78" cy="6" r="6" fill="#2490A9"/>
+<path d="M77.3263 7.09657L80.5102 3.91266L81 4.40249L77.3263 8.07622L75.122 5.872L75.6118 5.38217L77.3263 7.09657Z" fill="white" stroke="white" stroke-width="0.5"/>
+</g>
+<line x1="84" y1="5.5" x2="144" y2="5.5" stroke="#2490A9"/>
+<g clip-path="url(#clip2_0_7720)">
+<circle cx="150" cy="6" r="6" fill="#2490A9"/>
+<path d="M149.326 7.09657L152.51 3.91266L153 4.40249L149.326 8.07622L147.122 5.872L147.612 5.38217L149.326 7.09657Z" fill="white" stroke="white" stroke-width="0.5"/>
+</g>
+<line x1="156" y1="5.5" x2="216" y2="5.5" stroke="#2490A9" stroke-dasharray="4 4"/>
+<g clip-path="url(#clip3_0_7720)">
+<circle cx="222" cy="6" r="5.5" stroke="#2490A9"/>
+</g>
+<line x1="228" y1="5.5" x2="293" y2="5.5" stroke="#EDEDED"/>
+<g clip-path="url(#clip4_0_7720)">
+<circle cx="299" cy="6" r="5.5" stroke="#EDEDED"/>
+</g>
+<defs>
+<clipPath id="clip0_0_7720">
+<rect width="12" height="12" fill="white"/>
+</clipPath>
+<clipPath id="clip1_0_7720">
+<rect width="12" height="12" fill="white" transform="translate(72)"/>
+</clipPath>
+<clipPath id="clip2_0_7720">
+<rect width="12" height="12" fill="white" transform="translate(144)"/>
+</clipPath>
+<clipPath id="clip3_0_7720">
+<rect width="12" height="12" fill="white" transform="translate(216)"/>
+</clipPath>
+<clipPath id="clip4_0_7720">
+<rect width="12" height="12" fill="white" transform="translate(293)"/>
+</clipPath>
+</defs>
+</svg>
