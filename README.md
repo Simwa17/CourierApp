@@ -1,59 +1,80 @@
+# CourierApp
 
-# simwa17_s_application1
-### Table of contents
-- [System requirements](#system-requirements)
-- [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
-- [Check the UI of the entire app](#app-navigations)
-- [Application structure](#project-structure)
-- [How to format your code?](#how-you-can-do-code-formatting)
-- [How you can improve code readability?](#how-you-can-improve-the-readability-of-code)
-- [Libraries and tools used](#libraries-and-tools-used)
-- [Support](#support)
+CourierApp is a Flutter project with a maintainable baseline architecture for courier order creation and tracking.
 
-### System requirements
+## Prerequisites
 
-Dart SDK Version 2.18.0 or greater.
-Flutter SDK Version 3.3.0 or greater.
+- Flutter SDK 3.24.0+
+- Dart SDK 3.3.0+
 
-### Figma design guidelines for better UI accuracy
+## Getting Started
 
-Read our guidelines to increase the accuracy of design-to-code conversion by optimizing Figma designs.
-https://docs.dhiwise.com/docs/Designguidelines/intro
-
-### Check the UI of the entire app
-
-Check the UI of all the app screens from a single place by setting up the 'initialRoute'  to AppNavigation in the AppRoutes.dart file.
-
-### Application structure
-After successful build, your application structure should look like this:
-                    
+```bash
+flutter pub get
+flutter run --dart-define=APP_ENV=dev
 ```
-.
-├── android                         - It contains files required to run the application on an Android platform.
-├── assets                          - It contains all images and fonts of your application.
-├── ios                             - It contains files required to run the application on an iOS platform.
-├── lib                             - Most important folder in the application, used to write most of the Dart code..
-    ├── main.dart                   - Starting point of the application
-    ├── core
-    │   ├── app_export.dart         - It contains commonly used file imports
-    │   ├── constants               - It contains static constant class file
-    │   └── utils                   - It contains common files and utilities of the application
-    ├── presentation                - It contains widgets of the screens
-    ├── routes                      - It contains all the routes of the application
-    └── theme                       - It contains app theme and decoration classes
-    └── widgets                     - It contains all custom widget classes
+
+Supported environments:
+
+- `dev`
+- `staging`
+- `prod`
+
+## Project Structure
+
+```text
+lib/
+  main.dart
+  src/
+    app/
+    core/
+      config/
+      di/
+      error/
+      logging/
+    data/
+      repositories/
+    domain/
+      entities/
+      repositories/
+      usecases/
+    presentation/
+      pages/
+
+test/
+integration_test/
+.github/workflows/
 ```
-### How to format your code?
 
-- if your code is not formatted then run following command in your terminal to format code
-  ```
-  dart format .
-  ```
+## Quality Gates
 
-### How you can improve code readability?
+Local checks:
 
-Resolve the errors and warnings that are shown in the application.
+```bash
+dart format --set-exit-if-changed .
+flutter analyze
+flutter test
+flutter test integration_test
+```
 
-### Support
+CI enforces all checks on pull requests and main branch pushes.
 
-If you have any problems or questions, go to our Discord channel, where we will help you as quickly as possible: https://discord.com/invite/rFMnCG5MZ7
+## Architecture Overview
+
+- **Presentation**: UI widgets and user interactions.
+- **Domain**: Entities, repository contracts, and use cases.
+- **Data**: Repository implementations.
+- **Core**: Dependency injection, configuration, logging, and error handling.
+
+## Security and Maintenance
+
+- Dependency review workflow runs on all pull requests.
+- Dependabot creates weekly updates for pub packages and GitHub Actions.
+- Environment values are injected via `--dart-define`; no secrets are stored in source.
+
+## Contribution Flow
+
+1. Create a feature branch.
+2. Implement changes with tests.
+3. Run all local quality checks.
+4. Open a pull request and wait for CI checks to pass.
